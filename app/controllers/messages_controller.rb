@@ -13,6 +13,10 @@ class MessagesController < ApplicationController
     end
   end
 
+  def index
+    @messages = Message.all
+  end
+
 
   private
 
